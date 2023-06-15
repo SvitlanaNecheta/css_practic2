@@ -1,7 +1,53 @@
+:root {
+  background: #fcfefd;
+}
+
+
+.box {
+  background: #4b7193;
+}
+
 html {
   max-width: 720px;
 }
-
+h1, h2, button {
+color:#41bc68;
+}
+div>p {
+  color:black;
+  }
 body {
   background: #fff;
+}
+*{
+  color: black
+}
+#test:target{
+  color:red;
+}
+.link:link{
+  color:red;
+}
+.link:hover{
+  background: yellow;
+}
+.link:active{
+  color:purple;
+  background:purple;
+}
+
+input{
+  background-color: grey;
+}
+input:focus{
+  background-color: red;
+}
+.card:focus-within{
+  background-color: red;
+}
+.card:lang(fr){
+  background: rgb(141, 105, 105);
+}
+.card:lang(en){
+  background: rgb(127, 151, 130);
 }
