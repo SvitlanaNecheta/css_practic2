@@ -232,3 +232,19 @@ font-size: 16px;
 .link-item:hover{
   text-decoration: underline;
 }
+.flex-container{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+align-content: flex-end;
+
+height: 800px;
+border: 1px solid red;
+}
+.flex-item{
+  width:250px;
+  background: gray;
+  margin: 15px;
+
+}

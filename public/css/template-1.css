@@ -1,6 +1,10 @@
 .page{
-  background: #FFFFFF;
-  padding: 0 15px;
+ 
+  background-color: white;
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  background-position: bottom;
+  background-size: cover;
 }
 .page_content{
   max-width: 960px;
@@ -116,4 +120,21 @@ font-size: 40px;
   width: 100%;
   font-size: 19px;
   padding: 9px;
+}
+.hero-text{
+  background-color:transparent;
+}
+.card_description_item{
+  display: list-item;
+}
+.card_block{
+  list-style-position: inside;
+  list-style-type:circle;
+}
+.table tr td{
+ border: 1px solid #6C757D;
+}
+.table{
+  table-layout: auto;
+  width: 250px;
 }
