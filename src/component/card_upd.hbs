@@ -1,0 +1,30 @@
+       {{#with data}}
+      <h2 class="updates_title">{{title}}</h2>
+          <div class="update_item">
+             <div class="update_span_block upd_span_col1">
+                 <span class="update_span ">32x32</span>
+            </div>
+            <strong class="update_card_name">@{{list.[0].nickname}}</strong>
+            <br> 
+            <p class="update_card_description">{{list.[0].description}}</p>
+          </div>
+       <div class="update_item">
+             <div class="update_span_block upd_span_col2">
+                 <span class="update_span">32x32</span>
+            </div> 
+            <strong class="update_card_name">@{{list.[1].nickname}}</strong>
+            <br>
+            <p class="update_card_description">{{list.[1].description}}</p>
+          </div>
+       <div class="update_item">
+             <div class="update_span_block upd_span_col3">
+                 <span class="update_span ">32x32</span>
+            </div>
+            <strong class="update_card_name">@{{list.[2].nickname}}</strong>
+            <br> <br>
+            <p class="update_card_description">{{list.[2].description}}</p>
+          </div>
+      
+
+       <a href="{{url}}">{{text}}</a>
+    {{/with}}
