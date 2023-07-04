@@ -1,0 +1,334 @@
+:root {
+  --space-s:8px;
+  --space-m: 12px;
+  --space-xm: 16px;
+  --space-l: 24px;
+  --space-b: 36px;
+  --size-xs:12px;
+  --size-s: 14px;
+  --size-d: 16px;
+  --size-l: 20px;
+  --size-xl:24px;
+  --color-border:#dee2e6;
+  --color-primary:rgb(46,46,255);
+  --color-withe:#FFFFFF;
+  --border-radius-s: 4px;
+  --border-radius-b: 12px;
+  --color-title:#212529;
+  --color-text:#343A40;
+  --weidth-title:700;
+  --weight-text:400;
+  --page-width:1000px;
+}
+
+
+
+/*================================*/
+.page{
+  background: var(--color-withe);
+  padding: 0 15px;
+  display: flex;
+  justify-content: center;
+}
+.page-content{
+  max-width: var(--page-width);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+ 
+}
+/*================================*/
+
+.header{
+  padding: var(--space-l) 0;
+  border-bottom:1px solid var(--color-border);
+  display: flex;
+  justify-content: space-between;
+}
+.logo{
+  font-size: 17px;
+  background: var(--color-primary);
+  color: var(--color-withe);
+  width: 24px;
+  height: 24px;
+  border-radius: calc(var(--border-radius-b)/2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.nav{
+  display: flex;
+}
+.nav_inline{
+  gap: var(--space-l);
+}
+.nav_vertical{
+  gap:var(--space-xm);
+  flex-direction: column;
+}
+.nav_link{
+color:var(--color-text);
+font-size: var(--size-d);
+text-decoration: none;
+line-height: 100%;
+}
+.nav_link:hover{
+  text-decoration: underline;
+  color: var(--color-primary)
+}
+  /*============================*/
+ .footer{
+  padding: var(--space-l) 0;
+  border-top:1px solid var(--color-border);
+  display: flex;
+  justify-content: space-between;
+}
+.footer-copyright{
+  font-size: var(--size-s);
+  color:#6C757D;
+  display: block;
+  margin-top:var(--space-l);
+}
+.footer-title{
+  color:var(--color-title);
+  font-size: var(--size-l);
+  display: block;
+  margin-bottom: var(--space-l);
+  font-weight: var(--weidth-title);
+}
+ /*============================*/
+.main{
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  gap: 40px;
+}
+.info_block{
+ min-width: 582px;
+ width: 100%;
+ display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: var(--space-l);
+
+}
+.info_title{
+  color: var(--color-title);
+  font-size: 56px;
+  font-style: normal;
+  font-weight: var(--weight-title);
+  line-height: 120%;
+}
+.info_description{
+  justify-content: center;
+  color:var(--color-title);
+  font-size: var(--size-l);
+}
+
+/*================================*/
+.form{
+ max-width: 394px;
+ width: 100%;
+ 
+ border-radius: var(--border-radius-s);
+ border: 1px solid #DEE2E6;
+ background-color: #F8F9FA;
+ padding: 60px 48px;
+ display: flex;
+ flex-direction: column;
+ gap: 20px;
+align-items: flex-start;
+
+} 
+
+.form_button{
+  width: 298px;
+  height: 42px;
+  text-align: center;
+  padding: 6px;
+  background-color: #0D6EFD;
+  color: var(--color-withe);
+ border-radius: var(--border-radius-s);
+
+ transition: opacity 0.7s;
+border: 1px solid #0D6EFD;
+gap: 10px;
+align-self: stretch;
+}
+.form_button:hover{
+  opacity: 0.7;
+}
+.form_button:active{
+  opacity: 0.3;
+}
+
+.form_input_list{
+  width: 298px;
+  display: flex;
+  gap: var(--space-m);
+  flex-direction: column;
+}
+.form_input{
+  padding: var(--space-xm);
+  border: 1px solid #CED4DA;
+  background-color:var(--color-withe);
+  border-radius:var(--border-radius-s);
+}
+.form_input::placeholder{
+  color:var(--color-title);
+  font-size: var(--size-s);
+  
+}
+.form_checkbox{
+ display: flex;
+ gap: var(--space-s);
+ align-items: center;
+}
+
+.form_checkbox > input{
+  display: none;}
+
+.form_checkbox > input ~div{
+  border-radius: var(--border-radius-s);
+  border: 1px solid #767676;
+  width: 13px;
+  height: 13px;
+}
+.form_checkbox>input:checked ~div{
+   background-color: var(--color-primary);
+   border-color: var(--color-primary);
+}
+.form_checkbox>label{
+  color: var(--color-title);
+  font-size: var(--size-d);
+  cursor: pointer;
+}
+
+.form_info{
+  text-align: center;
+  color: #6C757D;
+  font-size: var(--size-s);
+  font-weight: var(--weight-text);
+  line-height: 100%;
+}
+/*================================*/
+
+.updates{
+  display: block;
+  gap:var(--space-l);
+
+}
+
+.updates_title{
+color: var(--color-title);
+font-size: var(--size-xl);
+font-weight:var(--weight-text);
+line-height: 120%;
+}
+.update_item{
+display: flex;
+padding: 16px;
+justify-content: center;
+align-items: flex-start;
+gap: var(--space-s);
+align-self: stretch;
+border-radius: var(--border-radius-b);
+justify-content: start;
+border-bottom: 1px solid #DEE2E6;
+}
+.update_span_block{
+ width: 32px;
+ height:32px;
+ gap: 4px;
+  }
+.update_span{
+  text-align: center;
+  color: #000;
+ font-size: var(--size-xs) ;
+ font-weight: var(--weight-text);
+ padding-top: 10px;
+}
+
+
+
+.upd_span_col1{
+  background-color:#007bff;
+}
+.upd_span_col2{
+  background-color:#E83E8C;
+}
+.upd_span_col3{
+  background-color:#6F42C1 ;
+}
+
+/*================================*/
+.expirience{
+  width: 100%;
+  padding:24px 28px;
+  display:block;
+  gap: var(--space-l);
+  border-radius: var(--border-radius-s);
+  background: #F8F9FA;
+}
+.expirience_title_block{
+  max-width:fit-content;
+  display:flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.expirience_title{
+  color: #212529;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  text-align: start;
+
+}
+.badge_block{
+ width: 100%;
+ height: 0;
+ padding-right:0;
+ padding-top:-20px;
+ padding-bottom:60px;
+ padding-left: 920px;
+}
+.badge_1{
+display: inline-flex;
+transform: rotate(30deg);
+padding: 12px 24px;
+margin-right: 0;
+flex-direction: column;
+align-items:center;
+gap: 12px;
+border-radius: 70px;
+background: #FF7347;
+margin-block-end: 0;
+}
+.expirience_list{
+  display:flex;
+  padding: 24px 28px;
+  align-items:center;
+  gap: 24px;
+}
+.expirience_card{
+  width: 298px;
+  height: auto;
+  padding: var(--space-m);
+  border-radius: 12px;
+  background: #212529;
+  display:inline-block;
+
+}
+.expirience_card_name{
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 700;}
+.expirience_card_details{
+  color: #767676;
+  font-size: var(--size-d);
+  font-weight: var(--weight-text);
+}
